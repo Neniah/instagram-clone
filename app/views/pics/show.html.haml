@@ -1,3 +1,4 @@
+= image_tag @pic.image_url.to_s 
 %h1= @pic.title
 %p= @pic.description
 %p
@@ -6,7 +7,7 @@ Pic by
 
 %br
 %br
-	
+
 
 = link_to 'Back', root_path
 = link_to 'Edit', edit_pic_path(@pic)
